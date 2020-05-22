@@ -1,0 +1,33 @@
+{
+  "name": "cap-service-context",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/cds": "^3",
+    "express": "^4"
+  },
+  "scripts": {
+    "start": "npx cds run"
+  },
+  "cds": {
+    "auth": {
+      "passport": {
+          "strategy": "mock",
+          "users": {
+              "john": {
+                  "ID": "john.doe@outlook.com",
+                  "roles": [
+                      "admin"
+                  ],
+                  "password": "",
+                  "userAttributes": {
+                      "country": "IN"
+                  }
+              }
+          }
+      }
+    }
+  }
+}
