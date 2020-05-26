@@ -1,0 +1,19 @@
+
+### Submit Datasource
+POST http://localhost:4004/devices/Devices
+Content-Type: application/json
+
+{
+    "name": "Test Device #1",
+    "descr": "Test data for Device",
+    "Configurations": [
+        {
+            "fieldName": "ID",
+            "label": {
+                "short": "",
+                "medium": "",
+                "long": ""
+            }
+        }
+    ]
+}
